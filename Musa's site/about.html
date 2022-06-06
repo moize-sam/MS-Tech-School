@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Musa's Web Site</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/log3.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!----------------------Footer----------------------->
+
+    <section class="abouts-us">
+      <div class="row">
+        <div class="abouts-col">
+            <h1>
+              We are MS Tech School That Provides Students With
+              Quality And skillfull Programing Languages
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis
+              perspiciatis veritatis ullam iste porro dolorum, sapiente voluptates
+              doloribus ipsum. Beatae quaerat temporibus impedit fuga odit vitae
+              quidem, error molestias?
+            </p>
+            <a href="" class="hello-btn red-btn">Explore Now</a>
+          </div>
+          <div class="abouts-col">
+            <img src="Images/about3.jpg" />
+          </div>
+      </div>
+    </section>
+
+    <!----------------------Footer----------------------->
+
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>We offer quality web development skills and required curiculum.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by MS Tech</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Musa's Web Site</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/log3.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Programs</h1>
+    </section>
+
+    <!----------------------Our Programs ----------------------->
+
+    <section class="service">
+      <h1>Programs We Offer</h1>
+      <p>
+        We offer quality web development skills and required curiculum in terms
+        of programming
+      </p>
+      <div class="row">
+        <div class="service-col">
+          <h3>Web Dev Classes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eos quo
+            quam quis ut doloremque enim veritatis quibusdam. Ratione dolore
+            omnis ex ipsa? Maxime minima non error odio, magnam quos.
+          </p>
+        </div>
+        <div class="service-col">
+          <h3>Java & Javascript Classses</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eos quo
+            quam quis ut doloremque enim veritatis quibusdam. Ratione dolore
+            omnis ex ipsa? Maxime minima non error odio, magnam quos.
+          </p>
+        </div>
+        <div class="service-col">
+          <h3>Django and PHP classes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eos quo
+            quam quis ut doloremque enim veritatis quibusdam. Ratione dolore
+            omnis ex ipsa? Maxime minima non error odio, magnam quos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!----------------------Our Facilities ----------------------->
+
+    <section class="products">
+        <h1>Our Facilities</h1>
+        <p>We offer quality web development skills and required curiculum.</p>
+        <div class="row">
+          <div class="product-col">
+            <img src="images/prod-7.jpg" alt="" />
+            <h3>JS-JQuery Lessons</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              tenetur natus perspiciatis laudantium assumenda maiores quam,
+              dignissimos eveniet delectus illum laborum aliquid, molestias non.
+              Nisi deleniti quo reprehenderit cupiditate veritatis?
+            </p>
+          </div>
+          <div class="product-col">
+            <img src="images/prod-5.jpg" alt="" />
+            <h3>HTML & CSS5 Lessons</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              tenetur natus perspiciatis laudantium assumenda maiores quam,
+              dignissimos eveniet delectus illum laborum aliquid, molestias non.
+              Nisi deleniti quo reprehenderit cupiditate veritatis?
+            </p>
+          </div>
+          <div class="product-col">
+            <img src="images/prod-2.jpg" alt="" />
+            <h3>PHP & MySQL Lessons</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              tenetur natus perspiciatis laudantium assumenda maiores quam,
+              dignissimos eveniet delectus illum laborum aliquid, molestias non.
+              Nisi deleniti quo reprehenderit cupiditate veritatis?
+            </p>
+          </div>
+        </div>
+      </section>
+  
+
+    <!----------------------Footer----------------------->
+
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>We offer quality web development skills and required curiculum.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by MS Tech</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>

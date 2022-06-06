@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Musa's Web Site</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/log3.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>CONTACT US</h1>
+    </section>
+
+    <!----------------------Contact----------------------->
+
+<section  class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.24137994176!2d37.050757149999995!3d-1.4388269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7671796e4977%3A0xdbcf4e925dfe9a95!2sDaystar%20University!5e0!3m2!1sen!2ske!4v1654358081499!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section  class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span>
+                    <h5>Along Mombasa Road Athi River Daystar University.</h5>
+                    <p>Athi River Machakos, Nairobi Kenya</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+25471522296</h5>
+                    <p>Monday To Friday, 8AM To 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-envelope"></i>
+                <span>
+                    <h5>samuelmusa@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email Address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hello-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!----------------------Footer----------------------->
+
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>We offer quality web development skills and required curiculum.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by MS Tech</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>

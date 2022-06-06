@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Musa's Web Site</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/log3.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Certificate &<br>Online Programs For 2021</h1>
+    </section>
+
+    <!----------------------Our blog----------------------->
+
+<section class="blog-content">
+<div class="row">
+    <div class="blog-left">
+        <img src="images/lap4.jpg" alt="">
+        <h2>Our Certificate & Online Programs For 2021</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quaerat reiciendis ut soluta possimus officia, quasi non aliquid qui. Architecto quisquam facilis esse nostrum eveniet eligendi consequatur amet debitis quis.</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt maiores odit impedit nostrum numquam corrupti repudiandae eveniet suscipit, a qui aliquid consequuntur eos in magnam voluptatibus nemo facere quas quo!</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt maiores odit impedit nostrum numquam corrupti repudiandae eveniet suscipit, a qui aliquid consequuntur eos in magnam voluptatibus nemo facere quas quo!</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt maiores odit impedit nostrum numquam corrupti repudiandae eveniet suscipit, a qui aliquid consequuntur eos in magnam voluptatibus nemo facere quas quo!</p>
+
+        <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <Form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea  rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hello-btn red-btn"> POST COMMENT</button>
+
+            </Form>
+        </div>
+    </div>
+    <div class="blog-right">
+        <h3>Post Programs</h3>
+        <div>
+            <span>Java & Android Lessons</span>
+            <span>21</span>
+        </div>
+        <div>
+            <span>Machine Learning Lessons</span>
+            <span>28</span>
+        </div>
+        <div>
+            <span>Android with Kotlin Lessons</span>
+            <span>18</span>
+        </div>
+        <div>
+            <span>C++ & C# Lessons</span>
+            <span>15</span>
+        </div>
+        <div>
+            <span>Networking & SCICO Lessons</span>
+            <span>32</span>
+        </div>
+        <div>
+            <span>Data Science Lessons</span>
+            <span>22</span>
+        </div>
+    </div>
+</div>
+</section>
+  
+    <!----------------------Footer----------------------->
+
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>We offer quality web development skills and required curiculum.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by MS Tech</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>
